@@ -28,30 +28,39 @@ const About = () => {
   }, []);
 
   return (
-    <div className="w-full bg-ivory pb-32 pt-32">
+    <div className="w-full bg-paperWarm pb-32 pt-32">
 
       {/* BIO */}
       <section className="px-6 w-full max-w-3xl mx-auto mb-24">
-        <div ref={bioRef} className="font-sans text-base text-ink leading-[1.75]">
-          <img
-            src={portrait}
-            alt="Charles Radtke"
-            className="float-right ml-10 mb-6 w-64 md:w-80 h-auto rounded-none"
-          />
-          <p className="mb-8">
-            When I set out to create a piece of furniture, I begin with the intent to make something of lasting integrity. I work directly from design concept to execution, without making sketches — part of the journey of building is the unknown of the finished work.
-          </p>
-          <p className="mb-8">
-            I consider myself primarily a cabinetmaker. The cabinet is not merely a box to store things; it is a structure built to hold intention. A cabinet holds things, like secrets. The architecture of a piece must honor the materials used, acknowledging that what I cut into boards was once a living system.
-          </p>
+        <div
+          ref={bioRef}
+          className="flex flex-col md:flex-row md:items-start gap-10 md:gap-12 font-sans text-base text-ink leading-[1.75]"
+        >
+          <div className="w-full max-w-xs md:max-w-[20rem] shrink-0 mx-auto md:mx-0">
+            <img
+              src={portrait}
+              alt="Charles Radtke"
+              className="w-full h-auto rounded-none"
+            />
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="mb-8">
+              When I set out to create a piece of furniture, I begin with the intent to make something of lasting integrity. I work directly from design concept to execution, without making sketches — part of the journey of building is the unknown of the finished work.
+            </p>
+            <p className="mb-8 md:mb-0">
+              I consider myself primarily a cabinetmaker. The cabinet is not merely a box to store things; it is a structure built to hold intention. A cabinet holds things, like secrets. The architecture of a piece must honor the materials used, acknowledging that what I cut into boards was once a living system.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* PULL QUOTE */}
-      <section className="px-6 w-full max-w-4xl mx-auto py-16 text-center clear-both">
-        <blockquote className="font-display font-light text-4xl md:text-5xl leading-[1.1] text-terracotta">
-          In the darkness of the interior, a piece asserts its true purpose.
-        </blockquote>
+      <section className="w-full bg-paperCool py-16">
+        <div className="px-6 max-w-3xl mx-auto text-center">
+          <blockquote className="font-display font-light text-4xl md:text-5xl leading-[1.1] text-terracotta">
+            In the darkness of the interior, a piece asserts its true purpose.
+          </blockquote>
+        </div>
       </section>
 
       <section className="px-6 w-full max-w-3xl mx-auto mb-24">

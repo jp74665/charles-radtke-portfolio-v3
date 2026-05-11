@@ -9,6 +9,8 @@ export default {
       colors: {
         background: '#FFFFFF',
         ivory: '#EDE8C4',
+        paperWarm: '#f5f3ee',
+        paperCool: '#f4f4f4',
         terracotta: '#E35336',
         ink: '#0A0A0A',
         textPrimary: '#0A0A0A',

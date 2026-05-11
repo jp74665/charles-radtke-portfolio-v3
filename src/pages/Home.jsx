@@ -61,8 +61,13 @@ const Home = () => {
       </section>
 
       {/* ABOUT TEASE */}
-      <section ref={aboutRef} className="py-32 px-6 md:px-16 lg:px-24 w-full bg-background">
-        <div className="max-w-6xl mx-auto flex flex-col">
+      <section ref={aboutRef} className="relative py-32 px-6 md:px-16 lg:px-24 w-full overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 -z-0 hidden md:flex" aria-hidden="true">
+          <div className="w-1/2 bg-paperWarm" />
+          <div className="w-1/2 bg-paperCool" />
+        </div>
+        <div className="absolute inset-0 -z-0 md:hidden bg-paperWarm" aria-hidden="true" />
+        <div className="relative z-10 max-w-6xl mx-auto flex flex-col">
           <div className="mb-10">
             <span className="font-sans text-xs uppercase tracking-[0.18em] text-textMuted">
               About the maker
